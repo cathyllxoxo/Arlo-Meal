@@ -5,6 +5,7 @@
     <h1>North American Offices Corporate Meal Request</h1>
 <style>
     p{color: red}
+    
 </style>
 </head>
     <form action="/office.php">
@@ -18,9 +19,13 @@
         </select>
     </form>
     
-    <p> Meal Request ordered minimum 48 hours in advance.</p>
+    <p> ***Meal Request ordered minimum 48 hours in advance.***</p>
+    <p>***For multiday meetings or workshops, please specify in the comments below.***</p>
+    
     <p> Breakfast time - 8am -10am</p>
     <p>Lunch time - 11-3:30pm</p>
+    <p> Snack time - morning/after lunch</p>
+    
 
     <form action="/office.php">
         <label for="office">Requested by: </label>
@@ -66,20 +71,16 @@
         <input type="cuisine" id="cuisine" name="cuisine"> 
     </form>
 
-    <h4>Attendee Diet Count</h4>
+    <h4>Attendee Dietary Requirements </h4>
 <h8>Make your best guess or send attendee list to Cathy ahead of time to confirm.</h8>
 
 <form action="/office.php">
     <label for="total">Total Number of Attendees </label>
         <input type="total" id="total" name="total"><br>
-        <label for="no restriction">No dietary restrictions </label>
+        <label for="no restriction">Percentage with no dietary restrictions </label>
         <input type="res" id="res" name="res"><br>
-        <label for="Vegetarian">Vegetarian - will assume no eggs </label>
+        <label for="Vegetarian">Percentage that are vegetarian </label>
         <input type="veg" id="veg" name="veg"><br>
-        <label for="vegan">Vegan </label>
-        <input type="vegan" id="vegan" name="vegan"><br>
-        <label for="Other">Other </label>
-        <input type="Other" id="Other" name="Other">
 </form>
 <h4>Beverages</h4>
 <form action="/office.php">
